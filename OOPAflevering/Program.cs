@@ -107,4 +107,4 @@
 //Quiz del 5/5
 
 //Angiv vilket metode til venstre er overloaded.
-//SVAR: Det er "SetSyn" metoden der er overloaded. En Metode der tager 2 forskellige parametre.
+//SVAR: Det er "SetSyn" metoden der er overloaded. En Metode der tager 2 forskellige parametre, som kan udføre forskelligt kode.
