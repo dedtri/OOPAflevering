@@ -157,10 +157,8 @@ while (true)
 
         List<string> list = a.Courses;
         List<TECPerson> list2 = a.Teachers;
-        //List<string> list3 = a.SchoolingCourses;
 
         list.Sort();
-
 
         foreach (var item in a.Courses)
         {
