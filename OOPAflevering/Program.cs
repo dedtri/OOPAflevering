@@ -35,24 +35,21 @@ while (true)
         List<string> list = a.Courses;
         List<TECPerson> list2 = a.Teachers;
         List<string> list3 = a.SchoolingCourses;
-        string fag;
-        string fag2;
 
         list.Sort();
 
-        foreach (var i in list)
+
+        foreach (var t in list)
         {
-            Console.WriteLine(i);
+                Console.WriteLine(t);
         }
 
-        foreach (var i2 in list3)
+        Console.WriteLine();
+
+        foreach (var t in list3)
         {
-            Console.WriteLine(i2);
+            Console.WriteLine(t);
         }
-
-
-
-
 
 
         Console.WriteLine();

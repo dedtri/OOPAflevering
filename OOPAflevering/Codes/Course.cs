@@ -25,15 +25,17 @@ namespace OOPAflevering.Codes
                 foreach (string item in Enum.GetNames(typeof(CourseCategory)))
                 {
                     if (item.Contains("programmering"))
-                    { 
+                    {
                         SchoolingCourses.Add(item);
                     }
                 }
             }
+
             //foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
             //{
             //    SchoolingCourses.Add(GetEnumDesc.GetDescription(item).ToString());
             //}
+
         }
 
         public override string GetTeacher()
