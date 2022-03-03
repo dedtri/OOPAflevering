@@ -34,7 +34,7 @@ while (true)
 
         List<string> list = a.Courses;
         List<TECPerson> list2 = a.Teachers;
-        List<string> list3 = a.SchoolingCourses;
+        //List<string> list3 = a.SchoolingCourses;
 
         list.Sort();
 
@@ -46,10 +46,10 @@ while (true)
 
         Console.WriteLine();
 
-        foreach (var t in list3)
-        {
-            Console.WriteLine(t);
-        }
+        //foreach (var t in list3)
+        //{
+        //    Console.WriteLine(t);
+        //}
 
 
         Console.WriteLine();
