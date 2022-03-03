@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Runtime.Serialization;
 
 
+
 namespace OOPAflevering.Codes
 {
     internal abstract class Schooling 
@@ -16,11 +17,18 @@ namespace OOPAflevering.Codes
 
         public virtual void SetCourses()
         {
+            
             Courses = new List<string>();
-            foreach (CourseCategory item in (CourseCategory[]) Enum.GetValues(typeof(CourseCategory)))
+
+            foreach (string item in Enum.GetNames(typeof(CourseCategory)))
             {
-                Courses.Add(item.ToString());
+                Courses.Add(item);
             }
+
+            //foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
+            //{
+            //    Courses.Add(GetEnumDesc.GetDescription(item).ToString());
+            //}
 
         }
 

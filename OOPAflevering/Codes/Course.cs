@@ -19,19 +19,21 @@ namespace OOPAflevering.Codes
         public override void SetCourses()
         {
             base.SetCourses();
-            List<string> SchoolingCourses = new List<string>();
+            SchoolingCourses = new List<string>();
             if (SchoolingName == SchoolingCategory.Programmeringslinje)
             {
                 foreach (string item in Enum.GetNames(typeof(CourseCategory)))
                 {
-                    //SchoolingCourses.Contains("test").Add(item);
+                    if (item.Contains("programmering"))
+                    { 
+                        SchoolingCourses.Add(item);
+                    }
                 }
             }
-            
-            foreach (string item in Enum.GetNames(typeof(CourseCategory)))
-            {
-                SchoolingCourses.Add(item);
-            }
+            //foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
+            //{
+            //    SchoolingCourses.Add(GetEnumDesc.GetDescription(item).ToString());
+            //}
         }
 
         public override string GetTeacher()

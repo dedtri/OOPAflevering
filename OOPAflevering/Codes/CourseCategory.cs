@@ -13,13 +13,13 @@ namespace OOPAflevering.Codes
         Grundlæggendeprogrammering,
         [Description("Objektorienteret programmering")]
         Objektorienteretprogrammering,
-        [Description("Objektorienteret programmering")]
+        [Description("Web server")]
         Webserver,
-        [Description("Objektorienteret programmering")]
+        [Description("Database server")]
         Databaseserver,
-        [Description("11111")]
+        [Description("WAN netværk")]
         WANnetværk,
-        [Description("sdfasdfasdfdsfads")]
+        [Description("LAN netværk")]
         LANnetværk,
     }
 }

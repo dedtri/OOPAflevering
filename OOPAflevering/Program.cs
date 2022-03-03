@@ -34,13 +34,26 @@ while (true)
 
         List<string> list = a.Courses;
         List<TECPerson> list2 = a.Teachers;
+        List<string> list3 = a.SchoolingCourses;
+        string fag;
+        string fag2;
 
         list.Sort();
 
-        foreach (string s in list)
+        foreach (var i in list)
         {
-            Console.WriteLine(s);
+            Console.WriteLine(i);
         }
+
+        foreach (var i2 in list3)
+        {
+            Console.WriteLine(i2);
+        }
+
+
+
+
+
 
         Console.WriteLine();
         Console.WriteLine("Lærer: ");
