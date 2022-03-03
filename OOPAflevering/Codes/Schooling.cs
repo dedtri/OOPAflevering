@@ -20,15 +20,15 @@ namespace OOPAflevering.Codes
             
             Courses = new List<string>();
 
-            foreach (string item in Enum.GetNames(typeof(CourseCategory)))
-            {
-                Courses.Add(item);
-            }
-
-            //foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
+            //foreach (string item in Enum.GetNames(typeof(CourseCategory)))
             //{
-            //    Courses.Add(GetEnumDesc.GetDescription(item).ToString());
+            //    Courses.Add(item);
             //}
+
+            foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
+            {
+                Courses.Add(GetEnumDesc.GetDescription(item).ToString());
+            }
 
         }
 

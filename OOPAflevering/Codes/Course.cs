@@ -22,19 +22,35 @@ namespace OOPAflevering.Codes
             SchoolingCourses = new List<string>();
             if (SchoolingName == SchoolingCategory.Programmeringslinje)
             {
-                foreach (string item in Enum.GetNames(typeof(CourseCategory)))
+                foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
                 {
-                    if (item.Contains("programmering"))
+                    if (item.GetDescription().ToLower().Contains("programmering"))
                     {
-                        SchoolingCourses.Add(item);
+                        SchoolingCourses.Add(GetEnumDesc.GetDescription(item).ToString());
+                    }
+                }
+            }
+            else if (SchoolingName == SchoolingCategory.Supporterlinje)
+            {
+                foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
+                {
+                    if (item.GetDescription().ToLower().Contains("server"))
+                    {
+                        SchoolingCourses.Add(GetEnumDesc.GetDescription(item).ToString());
+                    }
+                }
+            }
+            else if (SchoolingName == SchoolingCategory.Infrastrukturlinje)
+            {
+                foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
+                {
+                    if (item.GetDescription().ToLower().Contains("netværk"))
+                    {
+                        SchoolingCourses.Add(GetEnumDesc.GetDescription(item).ToString());
                     }
                 }
             }
 
-            //foreach (CourseCategory item in Enum.GetValues(typeof(CourseCategory)))
-            //{
-            //    SchoolingCourses.Add(GetEnumDesc.GetDescription(item).ToString());
-            //}
 
         }
 
